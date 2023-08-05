@@ -20,19 +20,19 @@ module.exports = {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
-				background: "#daebf1",
-				// background: "hsl(var(--background))",
+				// background: "#daebf1",
+				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
-				// primary: {
-				// 	DEFAULT: "hsl(var(--primary))",
-				// 	foreground: "hsl(var(--primary-foreground))",
-				// },
+				primary: {
+					DEFAULT: "hsl(var(--primary))",
+					foreground: "hsl(var(--primary-foreground))",
+				},
 				primary: "#6fbfdc",
-				// secondary: {
-				// 	DEFAULT: "hsl(var(--secondary))",
-				// 	foreground: "hsl(var(--secondary-foreground))",
-				// },
-				secondary: "#ecf9c7",
+				secondary: {
+					DEFAULT: "hsl(var(--secondary))",
+					foreground: "hsl(var(--secondary-foreground))",
+				},
+				// secondary: "#ecf9c7",
 				destructive: {
 					DEFAULT: "hsl(var(--destructive))",
 					foreground: "hsl(var(--destructive-foreground))",
