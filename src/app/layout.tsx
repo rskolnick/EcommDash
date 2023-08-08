@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Libre_Franklin } from "next/font/google";
+import { Domine } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
 import { ToasterProvider } from "@/providers/toast-provider";
 
-const libreFranklin = Libre_Franklin({ subsets: ["latin"] });
+const domine = Domine({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Admin Dashboard",
@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<ClerkProvider>
 			<html lang='en'>
-				<body className={cn(libreFranklin.className, "bg-background")}>
+				<body className={cn(domine.className, "bg-background")}>
 					<ToasterProvider />
 					<ModalProvider />
 					{children}
