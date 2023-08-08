@@ -4,6 +4,7 @@ import { Libre_Franklin } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ModalProvider } from "@/providers/modal-provider";
+import { ToasterProvider } from "@/providers/toast-provider";
 
 const libreFranklin = Libre_Franklin({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
 		<ClerkProvider>
 			<html lang='en'>
 				<body className={cn(libreFranklin.className, "bg-background")}>
+					<ToasterProvider />
 					<ModalProvider />
 					{children}
 				</body>
